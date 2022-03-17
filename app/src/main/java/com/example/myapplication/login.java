@@ -38,7 +38,7 @@ public class login extends AppCompatActivity {
         consultaSql = "select * from usuarios";
         Cursor usuarios = base.rawQuery(consultaSql,null);
         if(usuarios.getCount()==0){//si no hay ningun usuario registrado que registre este que seria quemado. esto para poder logearse
-            base.execSQL("insert into usuarios values('carlos@gmail.com','Carlos','123','Usuario')");
+            base.execSQL("insert into usuarios values('benjamin@gmail.com','Benjamin','123','Usuario')");
         }
 
         objUsuarios = new Usuarios();
